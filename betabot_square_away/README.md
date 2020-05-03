@@ -8,6 +8,7 @@
     - [What ROS REPs did you used?](#what-ros-reps-did-you-used)
     - [How we could increase the overall performance?](#how-we-could-increase-the-overall-performance)
     - [List the most time consuming problems you faced](#list-the-most-time-consuming-problems-you-faced)
+
   - [Demo](#demo)
   - [Screenshot](#screenshot)
       - [NAME:](#name)
@@ -55,22 +56,24 @@ bool success # Did it achieve it?
 ## After you implement the pkg state your reflection below
 
 ### How did you plan the task?
-
+ I used server/client to send a request and execute that request. The client's parameters are the size of the square and the number of times the robot moves in a square.
+    Implementing moving forward was a simple task of reading the odom data and determining the difference between the initial position of the robot and the final position. For the 90 degree rotation, it wasnt as straightforward. This is due to the fact that the angle readings range from -PI to PI, so subtracting the initial angle from the final angle would not always lead to the correct angle difference. To solve this problem 
 
 ### What ROS REPs did you used?
-
+The REPs used in C++ like organizing all data in folders launch, src, srv (if there is server/client or server/action). Also the naming conventions.
 
 ### How we could increase the overall performance?
-
+ Using a PID controller to tune the robot's position and angle and recieve constant feedback from the environment. 
 
 ### List the most time consuming problems you faced
+ Changing my code from py to cpp, and finding the right way to get the angle difference.
 
 ---
 
 ## Demo
 Add unlisted youtube/drive video
 
-[Demo](yourlinkhere)
+[Demo](https://drive.google.com/file/d/1Yvx6djcdScz8EPaaXY69ytUgMSndccsI/view?usp=sharing)
 
 ## Screenshot
 
@@ -79,6 +82,7 @@ Add unlisted youtube/drive video
 ---
 
 #### NAME:
+Alaa Mohamed Roshdy
 #### ID:
-
+201600031
 ---
