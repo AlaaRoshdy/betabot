@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find betabot_nav_amcl)/launch/amcl.launch"/>
+    <node name = "amcl_nav" pkg="betabot_nav_amcl" type= "amcl_nav"/>
+
+    <include file="$(find betabot_nav_amcl)/launch/myoffice.launch"/>
+    <node name = "navigate" pkg="betabot_nav_amcl" type= "navigate"/>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find betabot_nav_amcl)/rviz/betabot.rviz" />
+</launch>
