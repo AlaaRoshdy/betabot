@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find betabot_gazebo)/launch/betabot_empty_world.launch"/>
+    <node name = "betabot_move_custom_service_server" pkg="betabot_square_away" type= "betabot_move_custom_service_server"/>
+</launch>
