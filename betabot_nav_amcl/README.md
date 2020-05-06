@@ -77,7 +77,7 @@ They are represented as PGM images where any object in the map is represented wi
 Adaptive Monte Carlo Localization is a probilistic model that tries to localize the robot based on LaserScan data. The lasterScan data is compared to the given map to compare between its estimated pose and how far it is from the ground truth. This difference between the estimate and the reality is then tuned to get closer to the real readings by publishing to the odom topic the translational change needed.
 
 ### Is there other better approaches to localize your robot rather than amcl?
-Yes, 
+Yes, in games that integrate AI. Players can click on a destination and the player character will navigate to that position while avoiding obstacles.
 
 ### What are the amcl limitations or the fail cases?
 AMCL depends on a 2D map of the environment. Hence, any object at a height different than that of the map will be ignored.
